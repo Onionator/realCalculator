@@ -1,8 +1,8 @@
-var add = function(number1, number2){
-	return number1 + number2;
-};
+$(document).ready(function() {
+	//this function takes 2 inputs and adds them together
+	var addition = function(num1, num2) {
+		return num1 + num2;
+	}
+	alert(addition(parseInt(prompt("Input the first number.")), parseInt(prompt("Input the second number"))));
 
-var number1 = parseInt(prompt("Enter a number"))
-var number2 = parseInt(prompt("Enter a second number"))
-
-alert(add(number1,number2))
+	});
