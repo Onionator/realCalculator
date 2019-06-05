@@ -9,32 +9,38 @@
     <form class="form">
       <div >
         <label for="input1">First Number</label>
-        <input type="text" class="input1">
+        <input type="number" class="input1">
       </div>
       <div >
         <label for="input2">Second Number</label>
-        <input type="text" class="input2">
+        <input type="number" class="input2">
       </div>
 
-      <div class="mathButtons">
-        <div>
-          <button type="button" class="add">+</button>
-        </div>
-        <div>
-          <button type="button" class="subtract btn">-</button>
-        </div>
-        <div>
-          <button type="button" class="multiply btn">*</button>
-        </div>
-        <div>
-          <button type="button" class="divide btn">/</button>
-        </div>
-      </div>
+      <select class="mathButton" id="mathFunction">
+        <option value="0">+</option>
+        <option value="1">-</option>
+        <option value="2">*</option>
+        <option value="3">/</option>
+      </select>
 
       <div>
-        <button type="submit" class="equals">=</button>
+        <button class="equals">=</button>
       </div>
     </form>
 
   </body>
 </html>
+
+
+
+<!-- <button type="button" class="add">+</button>
+</div>
+<div>
+<button type="button" class="subtract btn">-</button>
+</div>
+<div>
+<button type="button" class="multiply btn">*</button>
+</div>
+<div>
+<button type="button" class="divide btn">/</button>
+</div> -->
