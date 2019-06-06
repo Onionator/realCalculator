@@ -17,7 +17,40 @@
 	};
 	// when equals is clicked, it calls the correct function and outputs the answer
 
- $(document).ready(function() {
+  $(document).ready(function() {
+	// $(".equals").click(function() {
+	//   	var symbols = [addition, subtraction, multiplication, division];
+	//    	alert(symbols[parseInt($("#mathFunction").val())]((parseInt($(".input1").val())), (parseInt($(".input2").val()))));
+	//  	event.preventDefault();
+  // });
+
+	var input1;
+	var number;
+
+	$(".btn").click(function() {
+		input1 = parseInt($(".input1").val());
+		number = (this).value;
+		$(".input1").val("");
+	});
+
+	$(".equals").click(function() {
+	var symbols = [addition, subtraction, multiplication, division];
+	var input2 = (parseInt($(".input1").val()));
+	alert(symbols[number](input1, input2));
+	event.preventDefault();
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
 // 	$(".add").click(function() {
 // 		var input1 = parseInt($(".input1").val());
 // 		var input2 = parseInt($(".input2").val());
@@ -47,15 +80,9 @@
 // 		event.preventDefault();
 // 	});
 
-$(".equals").click(function() {
-	var symbols = [addition, subtraction, multiplication, division];
- 	alert(symbols[parseInt($("#mathFunction").val())]((parseInt($(".input1").val())), (parseInt($(".input2").val()))));
-	event.preventDefault();
-});
-
-});
 
 
+//
 // $(".equals").click(function() {
 // 	var symbols = [addition, subtraction, multiplication, division];
 // 	var input1 = parseInt($(".input1").val());
@@ -65,8 +92,8 @@ $(".equals").click(function() {
 // 	alert(result);
 // 	event.preventDefault();
 // });
-
-
+//
+//
 
 
 
